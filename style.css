@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Ephesis&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Ephesis&family=Indie+Flower&family=Josefin+Slab:wght@600&family=Shadows+Into+Light&family=Sriracha&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Ephesis&family=Indie+Flower&family=Shadows+Into+Light&family=Sriracha&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 1),rgba(255, 255, 255, .3)),url(bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem 0 3rem;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding-inline: 1rem;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.left-nav {
+    display: flex;
+}
+
+.mid-nav  {
+padding-left: 150px;
+margin-left: 120px;
+    font-size: 1.25rem;
+}
+
+.right-nav img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section info {
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.mid-info {
+  text-align: center;
+}
+
+.eix {
+  font-size: 11rem;
+}
+.mid-info {
+    color: white;
+    padding: 10rem 5rem 0 5rem;
+}
+
+.mid-info img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.name {
+    font-size: 7rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: 'caveat';
+}
+
+.name span {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.work {
+    letter-spacing: 2.5px;
+    font-family: 'sriracha';
+    font-weight: 400;
+    
+}
+
+.explore {
+  font-family: 'caveat', sans-serif;
+  display: inline-block;
+  padding: 35px 50px;
+  background: linear-gradient(to right, #737373, #000000);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.explore:hover {
+  background: linear-gradient(to right, #000000, #737373);
+}
+
+.slide {
+  background: linear-gradient(rgba(161, 162, 166 ),rgba(1, 1, 1, 1));
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f9fafb;
+    color: rgba(255, 255, 255, 1);
+    height: 100vh;
+}
+
+.slideshow {
+
+  background-image: url("1.png");
+
+  width: 800px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  animation: back infinite 15s;
+}
+
+  @keyframes back {
+    0%{
+      background-image: url("7.png");
+    }
+    20%{
+      background-image: url("2.png");
+    }
+    40%{
+      background-image: url("3.png");
+    }
+    60%{
+      background-image: url("4.png");
+    }
+    80%{
+      background-image: url("5.png");
+    }
+    100%{
+      background-image: url("6.png")
+    }
+    120%{
+      background-image: url("7.png")
+    }
+  }
+  
+.landscape{
+  color: whitesmoke;
+  font-size: 5rem;
+  font-family: 'Ephesis', cursive
+
+}  
+
+.landscape span{
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.wildlife {
+  color: whitesmoke;
+  font-size: 5rem;
+  font-family: 'Ephesis', cursive
+ }
+ 
+.wildlife span{
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.wslide {
+  background-image: url("cat1.jpg");
+  width: 800px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  animation: back1 infinite 15s;
+}
+
+  @keyframes back1 {
+    0% , 140%{
+      background-image: url("rabbit.jpg");
+    }
+    20%{
+      background-image: url("cat2.jpg");
+    }
+    40%{
+      background-image: url("dog1.jpg");
+    }
+    60%{
+      background-image: url("cat3.jpg");
+    }
+    80%{
+      background-image: url("dog2.jpg");
+    }
+    100%{
+      background-image: url("racoon1.jpg")
+    }
+    120%{
+      background-image: url("rabbit.jpg")
+    }
+  }
+
+.portrait {
+
+  color: whitesmoke;
+
+  font-size: 5rem;
+  font-family: 'Ephesis', cursive
+ }
+ 
+.portrait span{
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.eport {
+  background-image: url("1.jpg");
+  width: 800px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  animation: back2 infinite 15s;
+}
+
+  @keyframes back2 {
+    0% , 140%{
+      background-image: url("7.jpg");
+    }
+    20%{
+      background-image: url("2.jpg");
+    }
+    40%{
+      background-image: url("3.jpg");
+    }
+    60%{
+      background-image: url("4.jpg");
+    }
+    80%{
+      background-image: url("5.jpg");
+    }
+    100%{
+      background-image: url("6.jpg")
+    }
+    120%{
+      background-image: url("7.jpg")
+    }
+  }
+
+.sec-des {
+    background: linear-gradient(to bottom, #000000, #555555);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(194, 34, 34);
+    display: flex;
+    align-items: center;
+    padding: 9rem 7.5rem;
+    justify-content: space-between;
+}
+
+
+.sec-des-left {
+    width: 50ch;
+}
+
+.sec-des p {
+  font-size: 20px;
+  font-family: 'sriracha';
+    line-height: 2;
+    color: whitesmoke;
+}
+
+h3 {
+    font-size: 5rem;
+    color: whitesmoke;
+    font-family: 'Ephesis';
+}
+
+.sec-des img {
+    width: 30vw;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.exp {
+  background: linear-gradient(to bottom, #555555, #000000);
+    padding: 10.1rem 7.5rem;
+    color: rgb(235, 235 , 235);
+}
+
+.exp h3 {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.exp img {
+    border-radius: 10px;
+    width: 30vw;
+}
+
+.exp-left {
+    order: 2;
+}
+
+.contact {
+  background: #000000;
+    padding: 9rem 7.5rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact > p {
+  font-family: 'sriracha';
+    color: whitesmoke;
+}
+
+.con {
+  font-family: 'ephesis';
+    font-size: 10rem;
+}
+
+.free {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact-text1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.email {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.messme {
+  font-family: 'caveat', sans-serif;
+  display: inline-block;
+  padding: 35px 50px;
+  background: linear-gradient(to right, #737373, #000000);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+footer {
+  background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+footer a {
+    text-decoration: none;
+    padding-inline: 1.25rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+footer p {
+    font-weight: 500;
+    cursor: pointer;
+}
